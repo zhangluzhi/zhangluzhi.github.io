@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"zhangluzhi.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"zhangluzhi.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -101,6 +101,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -125,11 +126,38 @@
     <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -156,7 +184,7 @@
     <div class="posts-collapse">
       <div class="collection-title">
         
-        <span class="collection-header">Excellent! 429 posts in total. Keep on posting.</span>
+        <span class="collection-header">Excellent! 478 posts in total. Keep on posting.</span>
       </div>
 
       
@@ -169,15 +197,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-04-20T14:15:51+08:00"
-              content="2024-04-20">
-          04-20
+              datetime="2024-08-11T14:31:23+08:00"
+              content="2024-08-11">
+          08-11
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/04/20/2024%E5%B9%B404%E6%9C%8820%E6%97%A5%EF%BC%8C%E5%92%96%E5%95%A1%E7%9B%96%E5%AD%90%E5%A5%BD%E9%A6%99%E9%A6%99/" itemprop="url">
-            <span itemprop="name">2024年04月20日，咖啡盖子好香香</span>
+          <a class="post-title-link" href="/2024/08/11/2024%E5%B9%B408%E6%9C%8811%E6%97%A5%EF%BC%8Cdie%E5%A4%A7%E9%A6%92%E5%A4%B4/" itemprop="url">
+            <span itemprop="name">2024年08月11日，die大馒头</span>
           </a>
       </div>
 
@@ -189,15 +217,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-04-17T14:15:09+08:00"
-              content="2024-04-17">
-          04-17
+              datetime="2024-08-08T14:30:39+08:00"
+              content="2024-08-08">
+          08-08
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/04/17/2024%E5%B9%B404%E6%9C%8817%E6%97%A5%EF%BC%8C%E5%92%8C%E5%A6%88%E5%A6%88%E6%8B%8D%E7%85%A7%E5%A5%BD%E5%BC%80%E5%BF%83/" itemprop="url">
-            <span itemprop="name">2024年04月17日，和妈妈拍照好开心</span>
+          <a class="post-title-link" href="/2024/08/08/2024%E5%B9%B408%E6%9C%8808%E6%97%A5%EF%BC%8C%E5%90%B9%E5%90%B9%E4%B9%90/" itemprop="url">
+            <span itemprop="name">2024年08月08日，吹吹乐</span>
           </a>
       </div>
 
@@ -209,15 +237,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-04-15T21:21:53+08:00"
-              content="2024-04-15">
-          04-15
+              datetime="2024-08-05T14:30:09+08:00"
+              content="2024-08-05">
+          08-05
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/04/15/2024%E5%B9%B404%E6%9C%8815%E6%97%A5%EF%BC%8C%E5%B0%8F%E5%B0%8F%E4%BA%BA%E5%84%BF%E5%92%8C%E5%A4%A7%E5%A4%A7%E4%BA%BA%E5%84%BF/" itemprop="url">
-            <span itemprop="name">2024年04月15日，小小人儿和大大人儿</span>
+          <a class="post-title-link" href="/2024/08/05/2024%E5%B9%B408%E6%9C%8805%E6%97%A5%EF%BC%8C%E6%B5%AE%E5%A4%B8%E7%89%88%E5%96%9D%E9%85%B8%E5%A5%B6/" itemprop="url">
+            <span itemprop="name">2024年08月05日，浮夸版喝酸奶</span>
           </a>
       </div>
 
@@ -229,15 +257,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-04-14T14:14:34+08:00"
-              content="2024-04-14">
-          04-14
+              datetime="2024-08-04T14:29:42+08:00"
+              content="2024-08-04">
+          08-04
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/04/14/2024%E5%B9%B404%E6%9C%8814%E6%97%A5%EF%BC%8C%E5%92%8C%E5%A6%88%E5%A6%88%E5%96%9D%E8%8C%B6/" itemprop="url">
-            <span itemprop="name">2024年04月14日，和妈妈喝茶</span>
+          <a class="post-title-link" href="/2024/08/04/2024%E5%B9%B408%E6%9C%8804%E6%97%A5%EF%BC%8C%E5%AE%B6%E5%BA%AD%E4%B8%BB%E8%A6%81%E5%8A%B3%E5%8A%A8%E5%8A%9B/" itemprop="url">
+            <span itemprop="name">2024年08月04日，家庭主要劳动力</span>
           </a>
       </div>
 
@@ -249,15 +277,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-04-13T14:14:08+08:00"
-              content="2024-04-13">
-          04-13
+              datetime="2024-08-03T14:29:01+08:00"
+              content="2024-08-03">
+          08-03
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/04/13/2024%E5%B9%B404%E6%9C%8813%E6%97%A5%EF%BC%8C%E5%92%8C%E7%88%B8%E7%88%B8%E7%9C%8B%E6%B5%B7/" itemprop="url">
-            <span itemprop="name">2024年04月13日，和爸爸看海</span>
+          <a class="post-title-link" href="/2024/08/03/2024%E5%B9%B408%E6%9C%8803%E6%97%A5%EF%BC%8Cshopping/" itemprop="url">
+            <span itemprop="name">2024年08月03日，shopping</span>
           </a>
       </div>
 
@@ -269,15 +297,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-04-05T14:13:43+08:00"
-              content="2024-04-05">
-          04-05
+              datetime="2024-07-28T14:28:26+08:00"
+              content="2024-07-28">
+          07-28
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/04/05/2024%E5%B9%B404%E6%9C%8805%E6%97%A5%EF%BC%8C%E5%90%83%E9%A5%AD%E9%A5%AD/" itemprop="url">
-            <span itemprop="name">2024年04月05日，吃饭饭</span>
+          <a class="post-title-link" href="/2024/07/28/2024%E5%B9%B407%E6%9C%8828%E6%97%A5%EF%BC%8C%E5%B0%8F%E4%BA%BA%E5%84%BF%E5%A4%A7%E8%84%91%E8%A2%8B/" itemprop="url">
+            <span itemprop="name">2024年07月28日，小人儿大脑袋</span>
           </a>
       </div>
 
@@ -289,15 +317,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-04-04T14:13:25+08:00"
-              content="2024-04-04">
-          04-04
+              datetime="2024-07-27T14:27:57+08:00"
+              content="2024-07-27">
+          07-27
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/04/04/2024%E5%B9%B404%E6%9C%8804%E6%97%A5%EF%BC%8C%E5%A4%A7%E5%A4%A7%E7%9A%84%E7%9C%BC%E7%9D%9B/" itemprop="url">
-            <span itemprop="name">2024年04月04日，大大的眼睛</span>
+          <a class="post-title-link" href="/2024/07/27/2024%E5%B9%B407%E6%9C%8827%E6%97%A5%EF%BC%8C%E7%88%B1%E7%8E%A9%E7%90%83%E7%90%83/" itemprop="url">
+            <span itemprop="name">2024年07月27日，爱玩球球</span>
           </a>
       </div>
 
@@ -309,15 +337,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-03-31T14:13:05+08:00"
-              content="2024-03-31">
-          03-31
+              datetime="2024-07-21T14:26:55+08:00"
+              content="2024-07-21">
+          07-21
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/03/31/2024%E5%B9%B403%E6%9C%8831%E6%97%A5%EF%BC%8C%E6%AF%94%E4%B8%AA%E8%80%B6/" itemprop="url">
-            <span itemprop="name">2024年03月31日，比个耶</span>
+          <a class="post-title-link" href="/2024/07/21/2024%E5%B9%B407%E6%9C%8821%E6%97%A5%EF%BC%8C%E7%AD%B7%E5%AD%90%E7%94%A8%E7%9A%84%E6%BA%9C/" itemprop="url">
+            <span itemprop="name">2024年07月21日，筷子用的溜</span>
           </a>
       </div>
 
@@ -329,15 +357,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-03-30T14:12:40+08:00"
-              content="2024-03-30">
-          03-30
+              datetime="2024-07-20T14:26:28+08:00"
+              content="2024-07-20">
+          07-20
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/03/30/2024%E5%B9%B403%E6%9C%8830%E6%97%A5%EF%BC%8C%E5%A5%BD%E5%96%9D/" itemprop="url">
-            <span itemprop="name">2024年03月30日，好喝</span>
+          <a class="post-title-link" href="/2024/07/20/2024%E5%B9%B407%E6%9C%8820%E6%97%A5%EF%BC%8C%E9%AC%BC%E8%84%B8%E5%8D%B7/" itemprop="url">
+            <span itemprop="name">2024年07月20日，鬼脸卷</span>
           </a>
       </div>
 
@@ -349,15 +377,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-03-23T14:11:15+08:00"
-              content="2024-03-23">
-          03-23
+              datetime="2024-07-14T14:26:03+08:00"
+              content="2024-07-14">
+          07-14
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/03/23/2024%E5%B9%B403%E6%9C%8823%E6%97%A5%EF%BC%8C%E6%8C%A8%E9%92%88%E6%97%A5/" itemprop="url">
-            <span itemprop="name">2024年03月23日，挨针日</span>
+          <a class="post-title-link" href="/2024/07/14/2024%E5%B9%B407%E6%9C%8814%E6%97%A5%EF%BC%8C%E5%90%8D%E5%AA%9B%E5%8D%B7%E7%9A%84%E5%8D%88%E9%A4%90/" itemprop="url">
+            <span itemprop="name">2024年07月14日，名媛卷的午餐</span>
           </a>
       </div>
 
@@ -373,7 +401,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2024/page/7/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/archives/2024/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2024/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/archives/2024/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2024/page/11/">11</a><a class="extend next" rel="next" href="/archives/2024/page/9/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/archives/2024/page/7/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/archives/2024/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2024/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/archives/2024/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2024/page/16/">16</a><a class="extend next" rel="next" href="/archives/2024/page/9/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -438,20 +466,20 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">429</span>
+          <span class="site-state-item-count">478</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -521,6 +549,10 @@
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 

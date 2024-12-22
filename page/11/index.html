@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"zhangluzhi.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"zhangluzhi.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -101,6 +101,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -125,11 +126,38 @@
     <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -152,7 +180,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/01/13/2024%E5%B9%B401%E6%9C%8813%E6%97%A5%EF%BC%8C%E6%9D%A5%E5%8A%A8%E7%89%A9%E5%9B%AD%E5%95%A6/">
+    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/06/05/2024%E5%B9%B406%E6%9C%8805%E6%97%A5%EF%BC%8C%E5%A1%91%E6%96%99%E8%A2%8B%E5%88%9B%E6%84%8F%E7%8E%A9%E6%B3%95/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -166,7 +194,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2024/01/13/2024%E5%B9%B401%E6%9C%8813%E6%97%A5%EF%BC%8C%E6%9D%A5%E5%8A%A8%E7%89%A9%E5%9B%AD%E5%95%A6/" class="post-title-link" itemprop="url">2024年01月13日，来动物园啦</a>
+            <a href="/2024/06/05/2024%E5%B9%B406%E6%9C%8805%E6%97%A5%EF%BC%8C%E5%A1%91%E6%96%99%E8%A2%8B%E5%88%9B%E6%84%8F%E7%8E%A9%E6%B3%95/" class="post-title-link" itemprop="url">2024年06月05日，塑料袋创意玩法</a>
         </h2>
 
         <div class="post-meta">
@@ -176,7 +204,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2024-01-13 18:00:25" itemprop="dateCreated datePublished" datetime="2024-01-13T18:00:25+08:00">2024-01-13</time>
+              <time title="Created: 2024-06-05 22:11:56" itemprop="dateCreated datePublished" datetime="2024-06-05T22:11:56+08:00">2024-06-05</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -204,8 +232,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2024/01/13/2024%E5%B9%B401%E6%9C%8813%E6%97%A5%EF%BC%8C%E6%9D%A5%E5%8A%A8%E7%89%A9%E5%9B%AD%E5%95%A6/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/01/13/2024%E5%B9%B401%E6%9C%8813%E6%97%A5%EF%BC%8C%E6%9D%A5%E5%8A%A8%E7%89%A9%E5%9B%AD%E5%95%A6/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/06/05/2024%E5%B9%B406%E6%9C%8805%E6%97%A5%EF%BC%8C%E5%A1%91%E6%96%99%E8%A2%8B%E5%88%9B%E6%84%8F%E7%8E%A9%E6%B3%95/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/06/05/2024%E5%B9%B406%E6%9C%8805%E6%97%A5%EF%BC%8C%E5%A1%91%E6%96%99%E8%A2%8B%E5%88%9B%E6%84%8F%E7%8E%A9%E6%B3%95/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -220,268 +248,9 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <iframe src="//player.bilibili.com/player.html?aid=369042278&bvid=BV1D94y1K7ER&cid=1414381084&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-      
-    </div>
+          <iframe src="//player.bilibili.com/player.html?bvid=BV1LGhBeMERg&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/01/07/2024%E5%B9%B401%E6%9C%8807%E6%97%A5%EF%BC%8C%E8%AE%A4%E7%9C%9F%E5%90%83%E9%A5%AD%E9%A5%AD/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Zhangluzhi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhangluzhi's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/01/07/2024%E5%B9%B401%E6%9C%8807%E6%97%A5%EF%BC%8C%E8%AE%A4%E7%9C%9F%E5%90%83%E9%A5%AD%E9%A5%AD/" class="post-title-link" itemprop="url">2024年01月07日，认真吃饭饭</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-01-07 17:59:46" itemprop="dateCreated datePublished" datetime="2024-01-07T17:59:46+08:00">2024-01-07</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-08-25 14:16:23" itemprop="dateModified" datetime="2024-08-25T14:16:23+08:00">2024-08-25</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/1%E5%B2%81/" itemprop="url" rel="index"><span itemprop="name">1岁</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/2024/01/07/2024%E5%B9%B401%E6%9C%8807%E6%97%A5%EF%BC%8C%E8%AE%A4%E7%9C%9F%E5%90%83%E9%A5%AD%E9%A5%AD/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/01/07/2024%E5%B9%B401%E6%9C%8807%E6%97%A5%EF%BC%8C%E8%AE%A4%E7%9C%9F%E5%90%83%E9%A5%AD%E9%A5%AD/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <iframe src="//player.bilibili.com/player.html?aid=241532500&bvid=BV1Pe411n7Uk&cid=1414380977&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/01/06/2024%E5%B9%B401%E6%9C%8806%E6%97%A5%EF%BC%8C%E6%99%9A%E4%B8%8A%E5%87%BA%E6%9D%A5%E6%BA%9C%E6%BA%9C%E5%BC%AF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Zhangluzhi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhangluzhi's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/01/06/2024%E5%B9%B401%E6%9C%8806%E6%97%A5%EF%BC%8C%E6%99%9A%E4%B8%8A%E5%87%BA%E6%9D%A5%E6%BA%9C%E6%BA%9C%E5%BC%AF/" class="post-title-link" itemprop="url">2024年01月06日，晚上出来溜溜弯</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-01-06 17:59:17" itemprop="dateCreated datePublished" datetime="2024-01-06T17:59:17+08:00">2024-01-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-08-25 14:16:23" itemprop="dateModified" datetime="2024-08-25T14:16:23+08:00">2024-08-25</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/1%E5%B2%81/" itemprop="url" rel="index"><span itemprop="name">1岁</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/2024/01/06/2024%E5%B9%B401%E6%9C%8806%E6%97%A5%EF%BC%8C%E6%99%9A%E4%B8%8A%E5%87%BA%E6%9D%A5%E6%BA%9C%E6%BA%9C%E5%BC%AF/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/01/06/2024%E5%B9%B401%E6%9C%8806%E6%97%A5%EF%BC%8C%E6%99%9A%E4%B8%8A%E5%87%BA%E6%9D%A5%E6%BA%9C%E6%BA%9C%E5%BC%AF/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <iframe src="//player.bilibili.com/player.html?aid=539097978&bvid=BV1Yi4y1W7fL&cid=1414380895&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/01/01/2024%E5%B9%B401%E6%9C%8801%E6%97%A5%EF%BC%8C%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%8B%8D/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Zhangluzhi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhangluzhi's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/01/01/2024%E5%B9%B401%E6%9C%8801%E6%97%A5%EF%BC%8C%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%8B%8D/" class="post-title-link" itemprop="url">2024年01月01日，新年第一拍</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2024-01-01 01:13:49" itemprop="dateCreated datePublished" datetime="2024-01-01T01:13:49+08:00">2024-01-01</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2024-08-25 14:16:23" itemprop="dateModified" datetime="2024-08-25T14:16:23+08:00">2024-08-25</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/1%E5%B2%81/" itemprop="url" rel="index"><span itemprop="name">1岁</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine: </span>
-    
-    <a title="valine" href="/2024/01/01/2024%E5%B9%B401%E6%9C%8801%E6%97%A5%EF%BC%8C%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%8B%8D/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2024/01/01/2024%E5%B9%B401%E6%9C%8801%E6%97%A5%EF%BC%8C%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%8B%8D/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><img src="https://s2.loli.net/2024/01/01/uoUg83S5BRKeIPL.jpg" width="60%"></p>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112666370706349&bvid=BV1MJ3gecE3F&cid=500001593711288&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
       
     </div>
@@ -501,7 +270,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2023/12/31/2023%E5%B9%B412%E6%9C%8831%E6%97%A5%EF%BC%8C%E6%95%85%E5%9C%B0%E9%87%8D%E6%B8%B8%EF%BC%88%E8%99%BD%E7%84%B6%E6%B8%B8%E8%BF%87%E5%BE%88%E5%A4%9A%E6%AC%A1%E3%80%82%E3%80%82%EF%BC%89/">
+    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/06/04/2024%E5%B9%B406%E6%9C%8804%E6%97%A5%EF%BC%8C%E4%BD%BF%E7%94%A8%E6%B4%AA%E8%8D%92%E4%B9%8B%E5%8A%9B%E5%90%83%E6%B2%B9%E9%A5%BC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -515,7 +284,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/12/31/2023%E5%B9%B412%E6%9C%8831%E6%97%A5%EF%BC%8C%E6%95%85%E5%9C%B0%E9%87%8D%E6%B8%B8%EF%BC%88%E8%99%BD%E7%84%B6%E6%B8%B8%E8%BF%87%E5%BE%88%E5%A4%9A%E6%AC%A1%E3%80%82%E3%80%82%EF%BC%89/" class="post-title-link" itemprop="url">2023年12月31日，故地重游（虽然游过很多次。。）</a>
+            <a href="/2024/06/04/2024%E5%B9%B406%E6%9C%8804%E6%97%A5%EF%BC%8C%E4%BD%BF%E7%94%A8%E6%B4%AA%E8%8D%92%E4%B9%8B%E5%8A%9B%E5%90%83%E6%B2%B9%E9%A5%BC/" class="post-title-link" itemprop="url">2024年06月04日，使用洪荒之力吃油饼</a>
         </h2>
 
         <div class="post-meta">
@@ -525,7 +294,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2023-12-31 01:13:18" itemprop="dateCreated datePublished" datetime="2023-12-31T01:13:18+08:00">2023-12-31</time>
+              <time title="Created: 2024-06-04 21:51:56" itemprop="dateCreated datePublished" datetime="2024-06-04T21:51:56+08:00">2024-06-04</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -553,8 +322,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2023/12/31/2023%E5%B9%B412%E6%9C%8831%E6%97%A5%EF%BC%8C%E6%95%85%E5%9C%B0%E9%87%8D%E6%B8%B8%EF%BC%88%E8%99%BD%E7%84%B6%E6%B8%B8%E8%BF%87%E5%BE%88%E5%A4%9A%E6%AC%A1%E3%80%82%E3%80%82%EF%BC%89/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2023/12/31/2023%E5%B9%B412%E6%9C%8831%E6%97%A5%EF%BC%8C%E6%95%85%E5%9C%B0%E9%87%8D%E6%B8%B8%EF%BC%88%E8%99%BD%E7%84%B6%E6%B8%B8%E8%BF%87%E5%BE%88%E5%A4%9A%E6%AC%A1%E3%80%82%E3%80%82%EF%BC%89/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/06/04/2024%E5%B9%B406%E6%9C%8804%E6%97%A5%EF%BC%8C%E4%BD%BF%E7%94%A8%E6%B4%AA%E8%8D%92%E4%B9%8B%E5%8A%9B%E5%90%83%E6%B2%B9%E9%A5%BC/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/06/04/2024%E5%B9%B406%E6%9C%8804%E6%97%A5%EF%BC%8C%E4%BD%BF%E7%94%A8%E6%B4%AA%E8%8D%92%E4%B9%8B%E5%8A%9B%E5%90%83%E6%B2%B9%E9%A5%BC/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -569,8 +338,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://s2.loli.net/2024/01/01/ofI3EGzTDmrybag.jpg" width="60%"></p>
-<p><img src="https://s2.loli.net/2024/01/01/eYptjl9y6snwKmE.jpg" width="60%"></p>
+          <p><img src="https://s2.loli.net/2024/06/23/nW35JCedxp7Ps1z.jpg" width="60%"></p>
 
       
     </div>
@@ -590,7 +358,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2023/12/30/2023%E5%B9%B412%E6%9C%8830%E6%97%A5%EF%BC%8C%E5%BC%80%E5%BF%83%E8%BF%87%E5%91%A8%E6%9C%AB/">
+    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/06/03/2024%E5%B9%B406%E6%9C%8803%E6%97%A5%EF%BC%8C%E8%BE%B9%E7%8E%A9%E8%BE%B9%E5%90%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -604,7 +372,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/12/30/2023%E5%B9%B412%E6%9C%8830%E6%97%A5%EF%BC%8C%E5%BC%80%E5%BF%83%E8%BF%87%E5%91%A8%E6%9C%AB/" class="post-title-link" itemprop="url">2023年12月30日，开心过周末</a>
+            <a href="/2024/06/03/2024%E5%B9%B406%E6%9C%8803%E6%97%A5%EF%BC%8C%E8%BE%B9%E7%8E%A9%E8%BE%B9%E5%90%83/" class="post-title-link" itemprop="url">2024年06月03日，边玩边吃</a>
         </h2>
 
         <div class="post-meta">
@@ -614,7 +382,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2023-12-30 01:12:39" itemprop="dateCreated datePublished" datetime="2023-12-30T01:12:39+08:00">2023-12-30</time>
+              <time title="Created: 2024-06-03 21:51:10" itemprop="dateCreated datePublished" datetime="2024-06-03T21:51:10+08:00">2024-06-03</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -642,8 +410,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2023/12/30/2023%E5%B9%B412%E6%9C%8830%E6%97%A5%EF%BC%8C%E5%BC%80%E5%BF%83%E8%BF%87%E5%91%A8%E6%9C%AB/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2023/12/30/2023%E5%B9%B412%E6%9C%8830%E6%97%A5%EF%BC%8C%E5%BC%80%E5%BF%83%E8%BF%87%E5%91%A8%E6%9C%AB/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/06/03/2024%E5%B9%B406%E6%9C%8803%E6%97%A5%EF%BC%8C%E8%BE%B9%E7%8E%A9%E8%BE%B9%E5%90%83/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/06/03/2024%E5%B9%B406%E6%9C%8803%E6%97%A5%EF%BC%8C%E8%BE%B9%E7%8E%A9%E8%BE%B9%E5%90%83/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -658,7 +426,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <iframe src="//player.bilibili.com/player.html?aid=368126996&bvid=BV1394y1g7FJ&cid=1390189951&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+          <p><img src="https://s2.loli.net/2024/06/23/89mWAcMV67enRl3.jpg" width="60%"></p>
 
       
     </div>
@@ -678,7 +446,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2023/12/24/2023%E5%B9%B412%E6%9C%8824%E6%97%A5%EF%BC%8C%E5%A4%A7%E5%8F%A3%E5%90%83%E8%8B%B9%E6%9E%9C/">
+    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/06/02/2024%E5%B9%B406%E6%9C%8802%E6%97%A5%EF%BC%8C%E8%9B%8B%E7%B3%95%E5%A5%BD%E5%A5%BD%E5%90%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -692,7 +460,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/12/24/2023%E5%B9%B412%E6%9C%8824%E6%97%A5%EF%BC%8C%E5%A4%A7%E5%8F%A3%E5%90%83%E8%8B%B9%E6%9E%9C/" class="post-title-link" itemprop="url">2023年12月24日，大口吃苹果</a>
+            <a href="/2024/06/02/2024%E5%B9%B406%E6%9C%8802%E6%97%A5%EF%BC%8C%E8%9B%8B%E7%B3%95%E5%A5%BD%E5%A5%BD%E5%90%83/" class="post-title-link" itemprop="url">2024年06月02日，蛋糕好好吃</a>
         </h2>
 
         <div class="post-meta">
@@ -702,7 +470,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2023-12-24 01:11:27" itemprop="dateCreated datePublished" datetime="2023-12-24T01:11:27+08:00">2023-12-24</time>
+              <time title="Created: 2024-06-02 22:11:18" itemprop="dateCreated datePublished" datetime="2024-06-02T22:11:18+08:00">2024-06-02</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -730,8 +498,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2023/12/24/2023%E5%B9%B412%E6%9C%8824%E6%97%A5%EF%BC%8C%E5%A4%A7%E5%8F%A3%E5%90%83%E8%8B%B9%E6%9E%9C/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2023/12/24/2023%E5%B9%B412%E6%9C%8824%E6%97%A5%EF%BC%8C%E5%A4%A7%E5%8F%A3%E5%90%83%E8%8B%B9%E6%9E%9C/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/06/02/2024%E5%B9%B406%E6%9C%8802%E6%97%A5%EF%BC%8C%E8%9B%8B%E7%B3%95%E5%A5%BD%E5%A5%BD%E5%90%83/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/06/02/2024%E5%B9%B406%E6%9C%8802%E6%97%A5%EF%BC%8C%E8%9B%8B%E7%B3%95%E5%A5%BD%E5%A5%BD%E5%90%83/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -746,7 +514,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <iframe src="//player.bilibili.com/player.html?aid=495673593&bvid=BV1QK41147Xb&cid=1390190855&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+          <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112666370704766&bvid=BV1MJ3gecEnB&cid=500001593711279&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
       
     </div>
@@ -766,7 +534,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2023/12/23/2023%E5%B9%B412%E6%9C%8823%E6%97%A5%EF%BC%8C%E5%A4%B1%E5%8E%BB%E8%A1%A8%E6%83%85%E7%AE%A1%E7%90%86/">
+    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/06/01/2024%E5%B9%B406%E6%9C%8801%E6%97%A5%EF%BC%8C%E5%84%BF%E7%AB%A5%E8%8A%82%E5%90%83%E8%9B%8B%E7%B3%95%E5%95%A6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -780,7 +548,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/12/23/2023%E5%B9%B412%E6%9C%8823%E6%97%A5%EF%BC%8C%E5%A4%B1%E5%8E%BB%E8%A1%A8%E6%83%85%E7%AE%A1%E7%90%86/" class="post-title-link" itemprop="url">2023年12月23日，失去表情管理</a>
+            <a href="/2024/06/01/2024%E5%B9%B406%E6%9C%8801%E6%97%A5%EF%BC%8C%E5%84%BF%E7%AB%A5%E8%8A%82%E5%90%83%E8%9B%8B%E7%B3%95%E5%95%A6/" class="post-title-link" itemprop="url">2024年06月01日，儿童节吃蛋糕啦</a>
         </h2>
 
         <div class="post-meta">
@@ -790,7 +558,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2023-12-23 01:11:08" itemprop="dateCreated datePublished" datetime="2023-12-23T01:11:08+08:00">2023-12-23</time>
+              <time title="Created: 2024-06-01 21:50:35" itemprop="dateCreated datePublished" datetime="2024-06-01T21:50:35+08:00">2024-06-01</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -818,8 +586,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2023/12/23/2023%E5%B9%B412%E6%9C%8823%E6%97%A5%EF%BC%8C%E5%A4%B1%E5%8E%BB%E8%A1%A8%E6%83%85%E7%AE%A1%E7%90%86/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2023/12/23/2023%E5%B9%B412%E6%9C%8823%E6%97%A5%EF%BC%8C%E5%A4%B1%E5%8E%BB%E8%A1%A8%E6%83%85%E7%AE%A1%E7%90%86/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/06/01/2024%E5%B9%B406%E6%9C%8801%E6%97%A5%EF%BC%8C%E5%84%BF%E7%AB%A5%E8%8A%82%E5%90%83%E8%9B%8B%E7%B3%95%E5%95%A6/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/06/01/2024%E5%B9%B406%E6%9C%8801%E6%97%A5%EF%BC%8C%E5%84%BF%E7%AB%A5%E8%8A%82%E5%90%83%E8%9B%8B%E7%B3%95%E5%95%A6/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -834,7 +602,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="https://s2.loli.net/2024/01/01/WFxs2KHSj1QRE4O.jpg" width="60%"></p>
+          <p><img src="https://s2.loli.net/2024/06/23/xuHSmAQ8VoI7FYX.jpg" width="60%"></p>
 
       
     </div>
@@ -854,7 +622,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2023/12/21/2023%E5%B9%B412%E6%9C%8821%E6%97%A5%EF%BC%8C%E5%88%9A%E6%B4%97%E5%AE%8C%E6%BE%A1%E7%9A%84%E8%90%8C%E5%A6%B9%E5%AD%90/">
+    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/05/30/2024%E5%B9%B405%E6%9C%8830%E6%97%A5%EF%BC%8C%E8%BA%BA%E5%9C%A8%E9%95%BF%E6%A4%85%E4%B8%8A%E5%90%83%E6%B2%B9%E9%A5%BC/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -868,7 +636,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/12/21/2023%E5%B9%B412%E6%9C%8821%E6%97%A5%EF%BC%8C%E5%88%9A%E6%B4%97%E5%AE%8C%E6%BE%A1%E7%9A%84%E8%90%8C%E5%A6%B9%E5%AD%90/" class="post-title-link" itemprop="url">2023年12月21日，刚洗完澡的萌妹子</a>
+            <a href="/2024/05/30/2024%E5%B9%B405%E6%9C%8830%E6%97%A5%EF%BC%8C%E8%BA%BA%E5%9C%A8%E9%95%BF%E6%A4%85%E4%B8%8A%E5%90%83%E6%B2%B9%E9%A5%BC/" class="post-title-link" itemprop="url">2024年05月30日，躺在长椅上吃油饼</a>
         </h2>
 
         <div class="post-meta">
@@ -878,7 +646,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2023-12-21 01:10:33" itemprop="dateCreated datePublished" datetime="2023-12-21T01:10:33+08:00">2023-12-21</time>
+              <time title="Created: 2024-05-30 22:10:07" itemprop="dateCreated datePublished" datetime="2024-05-30T22:10:07+08:00">2024-05-30</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -906,8 +674,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2023/12/21/2023%E5%B9%B412%E6%9C%8821%E6%97%A5%EF%BC%8C%E5%88%9A%E6%B4%97%E5%AE%8C%E6%BE%A1%E7%9A%84%E8%90%8C%E5%A6%B9%E5%AD%90/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2023/12/21/2023%E5%B9%B412%E6%9C%8821%E6%97%A5%EF%BC%8C%E5%88%9A%E6%B4%97%E5%AE%8C%E6%BE%A1%E7%9A%84%E8%90%8C%E5%A6%B9%E5%AD%90/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/05/30/2024%E5%B9%B405%E6%9C%8830%E6%97%A5%EF%BC%8C%E8%BA%BA%E5%9C%A8%E9%95%BF%E6%A4%85%E4%B8%8A%E5%90%83%E6%B2%B9%E9%A5%BC/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/05/30/2024%E5%B9%B405%E6%9C%8830%E6%97%A5%EF%BC%8C%E8%BA%BA%E5%9C%A8%E9%95%BF%E6%A4%85%E4%B8%8A%E5%90%83%E6%B2%B9%E9%A5%BC/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -922,7 +690,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <iframe src="//player.bilibili.com/player.html?aid=750702284&bvid=BV1TC4y1K7Nu&cid=1390181900&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+          <iframe src="//player.bilibili.com/player.html?bvid=BV1fPhBekE9N&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112666370640521&bvid=BV1mJ3geFEqw&cid=500001593711270&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
       
     </div>
 
@@ -941,7 +712,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2023/12/20/2023%E5%B9%B412%E6%9C%8820%E6%97%A5%EF%BC%8C%E8%AF%95%E6%96%B0%E5%B8%BD%E5%AD%90/">
+    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/05/29/2024%E5%B9%B405%E6%9C%8829%E6%97%A5%EF%BC%8C%E5%92%8C%E7%88%B8%E7%88%B8%E8%B5%9B%E8%B7%91/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -955,7 +726,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2023/12/20/2023%E5%B9%B412%E6%9C%8820%E6%97%A5%EF%BC%8C%E8%AF%95%E6%96%B0%E5%B8%BD%E5%AD%90/" class="post-title-link" itemprop="url">2023年12月20日，试新帽子</a>
+            <a href="/2024/05/29/2024%E5%B9%B405%E6%9C%8829%E6%97%A5%EF%BC%8C%E5%92%8C%E7%88%B8%E7%88%B8%E8%B5%9B%E8%B7%91/" class="post-title-link" itemprop="url">2024年05月29日，和爸爸赛跑</a>
         </h2>
 
         <div class="post-meta">
@@ -965,7 +736,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2023-12-20 01:09:58" itemprop="dateCreated datePublished" datetime="2023-12-20T01:09:58+08:00">2023-12-20</time>
+              <time title="Created: 2024-05-29 22:09:27" itemprop="dateCreated datePublished" datetime="2024-05-29T22:09:27+08:00">2024-05-29</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -993,8 +764,8 @@
       </span>
       <span class="post-meta-item-text">Valine: </span>
     
-    <a title="valine" href="/2023/12/20/2023%E5%B9%B412%E6%9C%8820%E6%97%A5%EF%BC%8C%E8%AF%95%E6%96%B0%E5%B8%BD%E5%AD%90/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2023/12/20/2023%E5%B9%B412%E6%9C%8820%E6%97%A5%EF%BC%8C%E8%AF%95%E6%96%B0%E5%B8%BD%E5%AD%90/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/05/29/2024%E5%B9%B405%E6%9C%8829%E6%97%A5%EF%BC%8C%E5%92%8C%E7%88%B8%E7%88%B8%E8%B5%9B%E8%B7%91/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/05/29/2024%E5%B9%B405%E6%9C%8829%E6%97%A5%EF%BC%8C%E5%92%8C%E7%88%B8%E7%88%B8%E8%B5%9B%E8%B7%91/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -1009,7 +780,271 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <iframe src="//player.bilibili.com/player.html?aid=793134221&bvid=BV1hC4y1i73r&cid=1390193479&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+          <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=112666370837015&bvid=BV1UJ3gecENd&cid=500001593711096&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/05/27/2024%E5%B9%B405%E6%9C%8827%E6%97%A5%EF%BC%8C%E4%BA%AD%E4%BA%AD%E7%8E%89%E7%AB%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zhangluzhi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhangluzhi's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/05/27/2024%E5%B9%B405%E6%9C%8827%E6%97%A5%EF%BC%8C%E4%BA%AD%E4%BA%AD%E7%8E%89%E7%AB%8B/" class="post-title-link" itemprop="url">2024年05月27日，亭亭玉立</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-05-27 21:48:22" itemprop="dateCreated datePublished" datetime="2024-05-27T21:48:22+08:00">2024-05-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-08-25 14:16:23" itemprop="dateModified" datetime="2024-08-25T14:16:23+08:00">2024-08-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/1%E5%B2%81/" itemprop="url" rel="index"><span itemprop="name">1岁</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/05/27/2024%E5%B9%B405%E6%9C%8827%E6%97%A5%EF%BC%8C%E4%BA%AD%E4%BA%AD%E7%8E%89%E7%AB%8B/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/05/27/2024%E5%B9%B405%E6%9C%8827%E6%97%A5%EF%BC%8C%E4%BA%AD%E4%BA%AD%E7%8E%89%E7%AB%8B/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="https://s2.loli.net/2024/06/23/3EkDTLP7GzBodiR.jpg" width="60%"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/05/26/2024%E5%B9%B405%E6%9C%8826%E6%97%A5%EF%BC%8C%E5%87%8C%E4%B9%B1%E7%BE%8E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zhangluzhi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhangluzhi's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/05/26/2024%E5%B9%B405%E6%9C%8826%E6%97%A5%EF%BC%8C%E5%87%8C%E4%B9%B1%E7%BE%8E/" class="post-title-link" itemprop="url">2024年05月26日，凌乱美</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-05-26 20:58:12" itemprop="dateCreated datePublished" datetime="2024-05-26T20:58:12+08:00">2024-05-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-08-25 14:16:23" itemprop="dateModified" datetime="2024-08-25T14:16:23+08:00">2024-08-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/1%E5%B2%81/" itemprop="url" rel="index"><span itemprop="name">1岁</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/05/26/2024%E5%B9%B405%E6%9C%8826%E6%97%A5%EF%BC%8C%E5%87%8C%E4%B9%B1%E7%BE%8E/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/05/26/2024%E5%B9%B405%E6%9C%8826%E6%97%A5%EF%BC%8C%E5%87%8C%E4%B9%B1%E7%BE%8E/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="https://s2.loli.net/2024/05/26/HvUkKDGgo3d9lJn.jpg" width="60%"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://zhangluzhi.github.io/2024/05/24/2024%E5%B9%B405%E6%9C%8824%E6%97%A5%EF%BC%8C%E4%BD%A0%E7%88%B8%E8%AF%B4%E4%BD%A0%E5%83%8F%E8%88%9E%E8%B9%88%E7%94%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zhangluzhi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Zhangluzhi's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/05/24/2024%E5%B9%B405%E6%9C%8824%E6%97%A5%EF%BC%8C%E4%BD%A0%E7%88%B8%E8%AF%B4%E4%BD%A0%E5%83%8F%E8%88%9E%E8%B9%88%E7%94%9F/" class="post-title-link" itemprop="url">2024年05月24日，你爸说你像舞蹈生</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2024-05-24 20:57:32" itemprop="dateCreated datePublished" datetime="2024-05-24T20:57:32+08:00">2024-05-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2024-08-25 14:16:23" itemprop="dateModified" datetime="2024-08-25T14:16:23+08:00">2024-08-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/1%E5%B2%81/" itemprop="url" rel="index"><span itemprop="name">1岁</span></a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine: </span>
+    
+    <a title="valine" href="/2024/05/24/2024%E5%B9%B405%E6%9C%8824%E6%97%A5%EF%BC%8C%E4%BD%A0%E7%88%B8%E8%AF%B4%E4%BD%A0%E5%83%8F%E8%88%9E%E8%B9%88%E7%94%9F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/05/24/2024%E5%B9%B405%E6%9C%8824%E6%97%A5%EF%BC%8C%E4%BD%A0%E7%88%B8%E8%AF%B4%E4%BD%A0%E5%83%8F%E8%88%9E%E8%B9%88%E7%94%9F/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><img src="https://s2.loli.net/2024/05/26/3nwkEvCaSbAmDNc.jpg" width="60%"></p>
+
       
     </div>
 
@@ -1027,7 +1062,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/10/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/43/">43</a><a class="extend next" rel="next" href="/page/12/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/page/10/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/48/">48</a><a class="extend next" rel="next" href="/page/12/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -1092,20 +1127,20 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">429</span>
+          <span class="site-state-item-count">478</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -1175,6 +1210,10 @@
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 

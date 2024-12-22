@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"zhangluzhi.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"zhangluzhi.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta property="og:type" content="website">
@@ -101,6 +101,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -125,11 +126,38 @@
     <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -156,7 +184,7 @@
     <div class="posts-collapse">
       <div class="collection-title">
         
-        <span class="collection-header">Excellent! 429 posts in total. Keep on posting.</span>
+        <span class="collection-header">Excellent! 478 posts in total. Keep on posting.</span>
       </div>
 
       
@@ -169,15 +197,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-01-13T18:00:25+08:00"
-              content="2024-01-13">
-          01-13
+              datetime="2024-06-07T21:53:00+08:00"
+              content="2024-06-07">
+          06-07
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/01/13/2024%E5%B9%B401%E6%9C%8813%E6%97%A5%EF%BC%8C%E6%9D%A5%E5%8A%A8%E7%89%A9%E5%9B%AD%E5%95%A6/" itemprop="url">
-            <span itemprop="name">2024年01月13日，来动物园啦</span>
+          <a class="post-title-link" href="/2024/06/07/2024%E5%B9%B406%E6%9C%8807%E6%97%A5%EF%BC%8C%E5%96%9D%E9%85%B8%E5%A5%B6/" itemprop="url">
+            <span itemprop="name">2024年06月07日，喝酸奶</span>
           </a>
       </div>
 
@@ -189,15 +217,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-01-07T17:59:46+08:00"
-              content="2024-01-07">
-          01-07
+              datetime="2024-06-05T22:11:56+08:00"
+              content="2024-06-05">
+          06-05
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/01/07/2024%E5%B9%B401%E6%9C%8807%E6%97%A5%EF%BC%8C%E8%AE%A4%E7%9C%9F%E5%90%83%E9%A5%AD%E9%A5%AD/" itemprop="url">
-            <span itemprop="name">2024年01月07日，认真吃饭饭</span>
+          <a class="post-title-link" href="/2024/06/05/2024%E5%B9%B406%E6%9C%8805%E6%97%A5%EF%BC%8C%E5%A1%91%E6%96%99%E8%A2%8B%E5%88%9B%E6%84%8F%E7%8E%A9%E6%B3%95/" itemprop="url">
+            <span itemprop="name">2024年06月05日，塑料袋创意玩法</span>
           </a>
       </div>
 
@@ -209,15 +237,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-01-06T17:59:17+08:00"
-              content="2024-01-06">
-          01-06
+              datetime="2024-06-04T21:51:56+08:00"
+              content="2024-06-04">
+          06-04
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/01/06/2024%E5%B9%B401%E6%9C%8806%E6%97%A5%EF%BC%8C%E6%99%9A%E4%B8%8A%E5%87%BA%E6%9D%A5%E6%BA%9C%E6%BA%9C%E5%BC%AF/" itemprop="url">
-            <span itemprop="name">2024年01月06日，晚上出来溜溜弯</span>
+          <a class="post-title-link" href="/2024/06/04/2024%E5%B9%B406%E6%9C%8804%E6%97%A5%EF%BC%8C%E4%BD%BF%E7%94%A8%E6%B4%AA%E8%8D%92%E4%B9%8B%E5%8A%9B%E5%90%83%E6%B2%B9%E9%A5%BC/" itemprop="url">
+            <span itemprop="name">2024年06月04日，使用洪荒之力吃油饼</span>
           </a>
       </div>
 
@@ -229,38 +257,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2024-01-01T01:13:49+08:00"
-              content="2024-01-01">
-          01-01
+              datetime="2024-06-03T21:51:10+08:00"
+              content="2024-06-03">
+          06-03
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2024/01/01/2024%E5%B9%B401%E6%9C%8801%E6%97%A5%EF%BC%8C%E6%96%B0%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%8B%8D/" itemprop="url">
-            <span itemprop="name">2024年01月01日，新年第一拍</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-    <div class="collection-year">
-      <span class="collection-header">2023</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2023-12-31T01:13:18+08:00"
-              content="2023-12-31">
-          12-31
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2023/12/31/2023%E5%B9%B412%E6%9C%8831%E6%97%A5%EF%BC%8C%E6%95%85%E5%9C%B0%E9%87%8D%E6%B8%B8%EF%BC%88%E8%99%BD%E7%84%B6%E6%B8%B8%E8%BF%87%E5%BE%88%E5%A4%9A%E6%AC%A1%E3%80%82%E3%80%82%EF%BC%89/" itemprop="url">
-            <span itemprop="name">2023年12月31日，故地重游（虽然游过很多次。。）</span>
+          <a class="post-title-link" href="/2024/06/03/2024%E5%B9%B406%E6%9C%8803%E6%97%A5%EF%BC%8C%E8%BE%B9%E7%8E%A9%E8%BE%B9%E5%90%83/" itemprop="url">
+            <span itemprop="name">2024年06月03日，边玩边吃</span>
           </a>
       </div>
 
@@ -272,15 +277,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2023-12-30T01:12:39+08:00"
-              content="2023-12-30">
-          12-30
+              datetime="2024-06-02T22:11:18+08:00"
+              content="2024-06-02">
+          06-02
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2023/12/30/2023%E5%B9%B412%E6%9C%8830%E6%97%A5%EF%BC%8C%E5%BC%80%E5%BF%83%E8%BF%87%E5%91%A8%E6%9C%AB/" itemprop="url">
-            <span itemprop="name">2023年12月30日，开心过周末</span>
+          <a class="post-title-link" href="/2024/06/02/2024%E5%B9%B406%E6%9C%8802%E6%97%A5%EF%BC%8C%E8%9B%8B%E7%B3%95%E5%A5%BD%E5%A5%BD%E5%90%83/" itemprop="url">
+            <span itemprop="name">2024年06月02日，蛋糕好好吃</span>
           </a>
       </div>
 
@@ -292,15 +297,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2023-12-24T01:11:27+08:00"
-              content="2023-12-24">
-          12-24
+              datetime="2024-06-01T21:50:35+08:00"
+              content="2024-06-01">
+          06-01
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2023/12/24/2023%E5%B9%B412%E6%9C%8824%E6%97%A5%EF%BC%8C%E5%A4%A7%E5%8F%A3%E5%90%83%E8%8B%B9%E6%9E%9C/" itemprop="url">
-            <span itemprop="name">2023年12月24日，大口吃苹果</span>
+          <a class="post-title-link" href="/2024/06/01/2024%E5%B9%B406%E6%9C%8801%E6%97%A5%EF%BC%8C%E5%84%BF%E7%AB%A5%E8%8A%82%E5%90%83%E8%9B%8B%E7%B3%95%E5%95%A6/" itemprop="url">
+            <span itemprop="name">2024年06月01日，儿童节吃蛋糕啦</span>
           </a>
       </div>
 
@@ -312,15 +317,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2023-12-23T01:11:08+08:00"
-              content="2023-12-23">
-          12-23
+              datetime="2024-05-30T22:10:07+08:00"
+              content="2024-05-30">
+          05-30
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2023/12/23/2023%E5%B9%B412%E6%9C%8823%E6%97%A5%EF%BC%8C%E5%A4%B1%E5%8E%BB%E8%A1%A8%E6%83%85%E7%AE%A1%E7%90%86/" itemprop="url">
-            <span itemprop="name">2023年12月23日，失去表情管理</span>
+          <a class="post-title-link" href="/2024/05/30/2024%E5%B9%B405%E6%9C%8830%E6%97%A5%EF%BC%8C%E8%BA%BA%E5%9C%A8%E9%95%BF%E6%A4%85%E4%B8%8A%E5%90%83%E6%B2%B9%E9%A5%BC/" itemprop="url">
+            <span itemprop="name">2024年05月30日，躺在长椅上吃油饼</span>
           </a>
       </div>
 
@@ -332,15 +337,15 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2023-12-21T01:10:33+08:00"
-              content="2023-12-21">
-          12-21
+              datetime="2024-05-29T22:09:27+08:00"
+              content="2024-05-29">
+          05-29
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2023/12/21/2023%E5%B9%B412%E6%9C%8821%E6%97%A5%EF%BC%8C%E5%88%9A%E6%B4%97%E5%AE%8C%E6%BE%A1%E7%9A%84%E8%90%8C%E5%A6%B9%E5%AD%90/" itemprop="url">
-            <span itemprop="name">2023年12月21日，刚洗完澡的萌妹子</span>
+          <a class="post-title-link" href="/2024/05/29/2024%E5%B9%B405%E6%9C%8829%E6%97%A5%EF%BC%8C%E5%92%8C%E7%88%B8%E7%88%B8%E8%B5%9B%E8%B7%91/" itemprop="url">
+            <span itemprop="name">2024年05月29日，和爸爸赛跑</span>
           </a>
       </div>
 
@@ -352,15 +357,35 @@
 
       <div class="post-meta">
         <time itemprop="dateCreated"
-              datetime="2023-12-20T01:09:58+08:00"
-              content="2023-12-20">
-          12-20
+              datetime="2024-05-27T21:48:22+08:00"
+              content="2024-05-27">
+          05-27
         </time>
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2023/12/20/2023%E5%B9%B412%E6%9C%8820%E6%97%A5%EF%BC%8C%E8%AF%95%E6%96%B0%E5%B8%BD%E5%AD%90/" itemprop="url">
-            <span itemprop="name">2023年12月20日，试新帽子</span>
+          <a class="post-title-link" href="/2024/05/27/2024%E5%B9%B405%E6%9C%8827%E6%97%A5%EF%BC%8C%E4%BA%AD%E4%BA%AD%E7%8E%89%E7%AB%8B/" itemprop="url">
+            <span itemprop="name">2024年05月27日，亭亭玉立</span>
+          </a>
+      </div>
+
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2024-05-26T20:58:12+08:00"
+              content="2024-05-26">
+          05-26
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/2024/05/26/2024%E5%B9%B405%E6%9C%8826%E6%97%A5%EF%BC%8C%E5%87%8C%E4%B9%B1%E7%BE%8E/" itemprop="url">
+            <span itemprop="name">2024年05月26日，凌乱美</span>
           </a>
       </div>
 
@@ -376,7 +401,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/page/10/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/archives/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/43/">43</a><a class="extend next" rel="next" href="/archives/page/12/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/archives/page/10/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/archives/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/48/">48</a><a class="extend next" rel="next" href="/archives/page/12/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
@@ -441,20 +466,20 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">429</span>
+          <span class="site-state-item-count">478</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">categories</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -524,6 +549,10 @@
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 
